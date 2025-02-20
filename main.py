@@ -1,11 +1,29 @@
-import emsine as esimeneFail
-import teine as teineFail
-import kolmas as kolmasFail
+from pykkar import *
+from painter import left, func1, func2, func3, func4, func5, func6
+create_world("""
+###########################
+#>     #      #     #     #
+#      #      #     #     #
+#                         #
+#      #      #     #     #
+#      #      #     #     #
+###########################
+""")
 
-userInput = input("Milline ülesanne sa tahad ülevaadata")
-if userInput == "1":
-    esimeneFail.myFunc()
-elif userInput == "2":
-    teineFail.myPykkar()
-else:
-    pass
+func1()
+func2()
+func3()
+func2()
+func3()
+func4()
+func1()
+func2()
+func3()
+func2()
+func3()
+func4()
+func5()
+func2()
+func2()
+func6()
+input("Vajutage Enter, et lõpetada...")
