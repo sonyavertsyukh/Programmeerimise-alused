@@ -1,24 +1,13 @@
-"""
-file = open("myFile.txt","w")
-file.write("myTekst")
-file.close()
-"""
-import bookCreator as bookCreator
-import sonya as log
-import reader as reader
-def main():
-    print("1 - külalisteraamat")
-    print("2 - ")
-    userInput = input("Sinu valik: ")
-    if userInput == "1":
-        bookCreator.guestBook()
-    elif userInput == "2":
-        sonya.sonya()
-    elif userInput == "3":
-        userFile = input("Milline file sa tahad lugeda?")
-        reader.readFile(userFile)
-        
-    else:
-        print("vale valik")
-        
-main()
+#file = open("test.txt", "r/w/a",)
+#file.read()
+#file.write()
+#file.close()
+import log_parser as logs
+import report_generator as generateReport
+
+log_file = "logs.txt"
+
+result = logs.analyze_log(log_file)
+generateReport.generate_report(result)
+
+#with open("file.txt","r",encording="utf-8") as file:
